@@ -8,7 +8,7 @@ public class TestGitClass {
 
 	@Test
 	void rest() {
-		given().when().get("https://reqres.in/api/users?page=2").then().statusCode(200);
+		given().when().get("https://reqres.in/api/users?page=2").then().statusCode(200).log().all();
 	}
 
 }
